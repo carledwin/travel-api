@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import static com.carledwinti.travel.api.constants.Constants.MESSAGE_SUCCESSFULLY;
 
 @RestController
-@RequestMapping("/travel")
+@RequestMapping("/travels")
 public class TravelController {
 
     @GetMapping("/status")
