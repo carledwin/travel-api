@@ -1,0 +1,21 @@
+Create container mongo on docker
+docker run -d --name travel-mongo-dk -v C:/Users/carli/Documents/openfeign:/data/db -e MONGODB_USER=usermongo -e MONGODB_PASS=usermongo123 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root123 -p 27017:27017 mongo:latest
+
+Show created container mongo
+docker ps -a
+
+Start container mongo
+docker start c79ce1cf249e
+
+To access the bash from container mongo
+docker exec -it travel-mongo-dk bash
+
+To connect to mongo into container
+mongo -host localhost -port 27017
+
+
+
+
+
+
+
